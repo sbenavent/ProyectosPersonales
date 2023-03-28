@@ -17,7 +17,7 @@ T.start()
 salir = "false"
 while salir != "SALIR":
    
-    print("¡Bienvenido al juego! Tienes 5 intentos para adivinar un número del 1 al 100. ¿Podrás conseguirlo?")
+    print("¡Bienvenido al juego! Tienes 10 intentos para adivinar un número del 1 al 100. ¿Podrás conseguirlo?")
     numeroAleatorio = random.randint(1,100)
 
     validation = "false" 
@@ -35,7 +35,7 @@ while salir != "SALIR":
         if guess < numeroAleatorio:
             print("Dale más caña bro")
             contador = contador+1
-        if contador == 5:
+        if contador == 10:
             print("SE TE ACABARON LOS INTENTOS")
             print("El número correcto era", numeroAleatorio)
             validation = "true"
