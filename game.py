@@ -5,7 +5,7 @@ import time
 
 def musica():
     while True:
-        playsound(r'C:\Users\sbena\OneDrive\Documentos\Cloud computing\VIDEOJUEGO\bin\music\musica.wav')
+        playsound(r'.\bin\music\musica.wav')
         time.sleep(1)
 
 T=threading.Thread(target=musica, daemon=True)
